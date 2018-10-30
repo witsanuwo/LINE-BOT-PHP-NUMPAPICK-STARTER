@@ -57,9 +57,15 @@
         $arrayPostData['messages'][1]['stickerId'] = "131";
         replyMsg($arrayHeader,$arrayPostData);
     }
-    else if($message == "on"){
+    else if($message == "ON"){
        
 	getMqttfromlineMsg("NodeMCU1","1");
+        
+    }
+
+    else if($message == "OFF"){
+       
+	getMqttfromlineMsg("NodeMCU1","0");
         
     }
 function replyMsg($arrayHeader,$arrayPostData){

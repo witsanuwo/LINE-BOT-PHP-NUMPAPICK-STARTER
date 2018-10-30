@@ -1,7 +1,7 @@
 <?php
 
  require("pub.php");
- require("line.php");
+ #require("line.php");
 	
     $accessToken = "fybwIoIf6IZx9bxwu17v3Um5AruhYai8MMbttBeZD8a+/rIgv05xGAsKlXgq4UQToVKhifapyxUqeTCcwsgp+YJvc2wj427vDfYt6fzfTWAkpbJ62eI3dJs6qTfX+O5OoQJMKhqIJnGzGzsGXjzjtAdB04t89/1O/w1cDnyilFU=";//copy Channel access token ตอนที่ตั้งค่ามาใส่
     

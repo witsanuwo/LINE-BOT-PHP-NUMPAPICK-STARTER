@@ -59,13 +59,19 @@
         replyMsg($arrayHeader,$arrayPostData);
     }
     else if($message == "ON"){
-       
+        $arrayPostData['replyToken'] = $arrayJson['events'][0]['replyToken'];
+        $arrayPostData['messages'][0]['type'] = "text";
+        $arrayPostData['messages'][0]['text'] = "LED ON";
+        replyMsg($arrayHeader,$arrayPostData);
 	getMqttfromlineMsg("NodeMCU1","1");
         
     }
 
     else if($message == "OFF"){
-       
+        $arrayPostData['replyToken'] = $arrayJson['events'][0]['replyToken'];
+        $arrayPostData['messages'][0]['type'] = "text";
+        $arrayPostData['messages'][0]['text'] = "LED OFF";
+        replyMsg($arrayHeader,$arrayPostData);
 	getMqttfromlineMsg("NodeMCU1","0");
         
     }
